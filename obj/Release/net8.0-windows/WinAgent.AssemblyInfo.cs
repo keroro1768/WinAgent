@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Windows Window Monitor Agent")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b399f6bf7c0ba5712c27e227652d4f77467917ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1273a8cd5df8e9e04d6a81b35098c3637e7d79a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
