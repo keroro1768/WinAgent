@@ -1,0 +1,47 @@
+[
+  {
+    "hwnd": 329504,
+    "class": "HwndWrapper[DbgX.Shell;;b945c91e-57c5-4a15-989c-82eb7760f72f]",
+    "title": "WinDbg 1.2601.12001.0",
+    "x": 127,
+    "y": 127,
+    "w": 900,
+    "h": 700
+  },
+  {
+    "hwnd": 329398,
+    "class": "HwndWrapper[DbgX.Shell;;1c8fb28a-0e0d-4ae6-b46f-ba563580767c]",
+    "title": "",
+    "x": 0,
+    "y": 0,
+    "w": 135,
+    "h": 37
+  },
+  {
+    "hwnd": 1836296,
+    "class": "HwndWrapper[DbgX.Shell;;fbf702ce-dc81-4794-8c99-c3eda562345b]",
+    "title": "MediaContextNotificationWindow",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "hwnd": 657428,
+    "class": "HwndWrapper[DbgX.Shell;;689a6598-8d7d-4ce9-81cd-274819d01030]",
+    "title": "SystemResourceNotifyWindow",
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+  },
+  {
+    "hwnd": 460584,
+    "class": "HwndWrapper[DbgX.Shell;;609bf62b-f7a0-4e43-92ec-93f9e0402f23]",
+    "title": "",
+    "x": 0,
+    "y": 0,
+    "w": 135,
+    "h": 37
+  }
+]

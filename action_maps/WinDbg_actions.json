@@ -1,0 +1,17 @@
+{
+  "app": "WinDbg",
+  "created": "2026-03-25T00:21:33.289884",
+  "actions": [
+    {
+      "label": "NewFolder",
+      "x": 173,
+      "y": 131,
+      "expected_result": "Local Disk",
+      "description": "",
+      "recorded_at": "2026-03-25T00:21:33.289884",
+      "verified": true,
+      "verification_count": 1,
+      "last_verified": "2026-03-25T00:22:00"
+    }
+  ]
+}

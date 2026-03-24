@@ -1,0 +1,45 @@
+{
+  "name": "開啟 Notepad 並存檔",
+  "description": "打開 Notepad，輸入文字，另存新檔",
+  "version": "1.0",
+  "continue_on_error": false,
+  "steps": [
+    {
+      "action": "launch",
+      "params": {
+        "app": "notepad.exe",
+        "wait": 2
+      }
+    },
+    {
+      "action": "type",
+      "params": {
+        "text": "Hi, I win - {timestamp}"
+      }
+    },
+    {
+      "action": "send_keys",
+      "params": {
+        "keys": "^s"
+      }
+    },
+    {
+      "action": "wait",
+      "params": {
+        "duration": 1
+      }
+    },
+    {
+      "action": "type",
+      "params": {
+        "text": "output_{timestamp}.txt"
+      }
+    },
+    {
+      "action": "send_keys",
+      "params": {
+        "keys": "{ENTER}"
+      }
+    }
+  ]
+}

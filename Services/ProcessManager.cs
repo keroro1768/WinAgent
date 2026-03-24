@@ -6,6 +6,7 @@ namespace WinAgent.Services;
 public class ProcessManager
 {
     private readonly List<ProcessInfo> _processes = new();
+    private readonly Dictionary<int, Process> _processHandles = new();
     private readonly object _lock = new();
     private int _nextInstanceId = 1;
 
@@ -13,7 +14,12 @@ public class ProcessManager
     public event Action<int, string>? OnError;
     public event Action<int, int>? OnProcessExited;
 
-    public async Task<ProcessInfo> SpawnProcessAsync(string executablePath, string arguments = "", bool captureOutput = true)
+    public async Task<ProcessInfo> SpawnProcessAsync(
+        string executablePath,
+        string arguments = "",
+        bool captureOutput = true,
+        bool redirectInput = false,
+        string? workingDirectory = null)
     {
         var processInfo = new ProcessInfo
         {
@@ -21,7 +27,8 @@ public class ProcessManager
             ExecutablePath = executablePath,
             Arguments = arguments,
             Status = ProcessStatus.Starting,
-            StartTime = DateTime.Now
+            StartTime = DateTime.Now,
+            Name = Path.GetFileNameWithoutExtension(executablePath)
         };
 
         try
@@ -33,13 +40,14 @@ public class ProcessManager
                 UseShellExecute = false,
                 RedirectStandardOutput = captureOutput,
                 RedirectStandardError = captureOutput,
+                RedirectStandardInput = redirectInput,
                 CreateNoWindow = true,
-                WorkingDirectory = Path.GetDirectoryName(executablePath) ?? AppContext.BaseDirectory
+                WorkingDirectory = workingDirectory
+                    ?? Path.GetDirectoryName(executablePath)
+                    ?? AppContext.BaseDirectory
             };
 
             var process = new Process { StartInfo = startInfo };
-            processInfo.ProcessId = process.Id;
-            processInfo.Name = Path.GetFileNameWithoutExtension(executablePath);
 
             if (captureOutput)
             {
@@ -67,9 +75,10 @@ public class ProcessManager
                 lock (_lock)
                 {
                     processInfo.Status = ProcessStatus.Crashed;
-                    OnProcessExited?.Invoke(processInfo.InstanceId, process.ExitCode);
-                    Logger.Log($"Process {processInfo.Name} (Instance {processInfo.InstanceId}) exited with code {process.ExitCode}");
+                    _processHandles.Remove(processInfo.InstanceId);
                 }
+                OnProcessExited?.Invoke(processInfo.InstanceId, process.ExitCode);
+                Logger.Log($"Process {processInfo.Name} (Instance {processInfo.InstanceId}) exited with code {process.ExitCode}");
             };
 
             process.Start();
@@ -80,6 +89,11 @@ public class ProcessManager
             {
                 process.BeginOutputReadLine();
                 process.BeginErrorReadLine();
+            }
+
+            lock (_lock)
+            {
+                _processHandles[processInfo.InstanceId] = process;
             }
 
             Logger.Log($"Started process {processInfo.Name} (Instance {processInfo.InstanceId}, PID: {processInfo.ProcessId})");
@@ -100,56 +114,48 @@ public class ProcessManager
 
     public void SendInput(int instanceId, string input)
     {
-        var processInfo = GetProcess(instanceId);
-        if (processInfo == null) return;
-
-        try
+        lock (_lock)
         {
-            var process = Process.GetProcessById(processInfo.ProcessId);
-            if (!process.HasExited)
+            if (!_processHandles.TryGetValue(instanceId, out var process))
             {
-                process.StandardInput.WriteLine(input);
-                process.StandardInput.Flush();
-                Logger.Log($"Sent input to instance {instanceId}: {input}");
+                Logger.LogWarning($"No process handle for instance {instanceId}");
+                return;
             }
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError($"Failed to send input to instance {instanceId}", ex);
-        }
-    }
 
-    public void SendKeys(int instanceId, string keys)
-    {
-        var processInfo = GetProcess(instanceId);
-        if (processInfo == null) return;
-
-        try
-        {
-            var hwnd = Process.GetProcessById(processInfo.ProcessId).MainWindowHandle;
-            if (hwnd != IntPtr.Zero)
+            try
             {
-                Native.Win32.PostMessage(hwnd, Native.Win32.WM_CHAR, IntPtr.Zero, IntPtr.Zero);
-                Logger.Log($"Sent keys to instance {instanceId}");
+                if (!process.HasExited && process.StartInfo.RedirectStandardInput)
+                {
+                    process.StandardInput.WriteLine(input);
+                    process.StandardInput.Flush();
+                    Logger.Log($"Sent input to instance {instanceId}: {input}");
+                }
             }
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError($"Failed to send keys to instance {instanceId}", ex);
+            catch (Exception ex)
+            {
+                Logger.LogError($"Failed to send input to instance {instanceId}", ex);
+            }
         }
     }
 
     public void KillProcess(int instanceId)
     {
-        var processInfo = GetProcess(instanceId);
+        Process? process;
+        ProcessInfo? processInfo;
+
+        lock (_lock)
+        {
+            processInfo = _processes.FirstOrDefault(p => p.InstanceId == instanceId);
+            _processHandles.TryGetValue(instanceId, out process);
+        }
+
         if (processInfo == null) return;
 
         try
         {
-            var process = Process.GetProcessById(processInfo.ProcessId);
-            if (!process.HasExited)
+            if (process != null && !process.HasExited)
             {
-                process.Kill();
+                process.Kill(entireProcessTree: true);
                 process.WaitForExit(5000);
                 Logger.Log($"Killed process instance {instanceId}");
             }
@@ -163,6 +169,7 @@ public class ProcessManager
             lock (_lock)
             {
                 _processes.Remove(processInfo);
+                _processHandles.Remove(instanceId);
             }
         }
     }

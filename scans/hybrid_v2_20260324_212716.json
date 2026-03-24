@@ -1,0 +1,10 @@
+{
+  "scanned_at": "2026-03-24T21:27:16.089019",
+  "window": {
+    "hwnd": 329504,
+    "title": "WinDbg 1.2601.12001.0",
+    "class": "HwndWrapper[DbgX.Shell;;b945c91e-57c5-4a15-989c-82eb7760f72f]",
+    "pid": 15872
+  },
+  "elements": []
+}

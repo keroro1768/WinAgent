@@ -56,11 +56,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Keror\\.openclaw\\workspace\\winagent\\WinAgent.csproj",
+      "projectUniqueName": "D:\\Project\\WinAgent\\WinAgent.csproj",
       "projectName": "WinAgent",
-      "projectPath": "C:\\Users\\Keror\\.openclaw\\workspace\\winagent\\WinAgent.csproj",
+      "projectPath": "D:\\Project\\WinAgent\\WinAgent.csproj",
       "packagesPath": "C:\\Users\\Keror\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Keror\\.openclaw\\workspace\\winagent\\obj\\",
+      "outputPath": "D:\\Project\\WinAgent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Keror\\AppData\\Roaming\\NuGet\\NuGet.Config"

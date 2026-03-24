@@ -1,0 +1,31 @@
+{
+  "created": "2026-03-24T18:10:00",
+  "duration": 3.5,
+  "actions": [
+    {
+      "type": "click",
+      "x": 500,
+      "y": 300,
+      "timestamp": 0.5,
+      "element": {
+        "name": "Start",
+        "type": "Button"
+      }
+    },
+    {
+      "type": "click",
+      "x": 600,
+      "y": 400,
+      "timestamp": 1.5,
+      "element": {
+        "name": "OK",
+        "type": "Button"
+      }
+    },
+    {
+      "type": "key",
+      "key": "Hello World",
+      "timestamp": 2.5
+    }
+  ]
+}

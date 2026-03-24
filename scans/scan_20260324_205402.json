@@ -1,0 +1,56 @@
+{
+  "scanned_at": "2026-03-24T20:54:02.083184",
+  "total": 8,
+  "tabs": {},
+  "buttons": {},
+  "all": [
+    {
+      "name": "aWinDbg 1260L12001 0",
+      "x": -1,
+      "y": -3,
+      "type": "text"
+    },
+    {
+      "name": "Start debugging",
+      "x": 261,
+      "y": 105,
+      "type": "text"
+    },
+    {
+      "name": "Start debugging",
+      "x": 68,
+      "y": 126,
+      "type": "text"
+    },
+    {
+      "name": "Save workspace",
+      "x": 68,
+      "y": 183,
+      "type": "text"
+    },
+    {
+      "name": "You havenlt debugged anything recently. Star",
+      "x": 771,
+      "y": 189,
+      "type": "text"
+    },
+    {
+      "name": "Recent",
+      "x": 342,
+      "y": 211,
+      "type": "text"
+    },
+    {
+      "name": "left",
+      "x": 773,
+      "y": 233,
+      "type": "text"
+    },
+    {
+      "name": "Open sourcefile",
+      "x": 68,
+      "y": 240,
+      "type": "text"
+    }
+  ]
+}

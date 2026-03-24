@@ -1,0 +1,251 @@
+{
+  "app": "WinDBG",
+  "pid": 15872,
+  "total": 47,
+  "by_type": {
+    "WindowControl": 1,
+    "PaneControl": 31,
+    "TextControl": 2,
+    "ButtonControl": 8,
+    "ToolBarControl": 2,
+    "SliderControl": 1,
+    "TabControl": 2
+  },
+  "controls": [
+    {
+      "d": 0,
+      "t": "WindowControl",
+      "n": "OpenClaw Control 和其他 1 個頁面 - 個人 - Micros"
+    },
+    {
+      "d": 1,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 1,
+      "t": "PaneControl",
+      "n": "OpenClaw Control - Microsoft Edge"
+    },
+    {
+      "d": 2,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "未命名 - 個人 - Microsoft​ Edge"
+    },
+    {
+      "d": 4,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "最小化"
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "最大化"
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "還原"
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "關閉"
+    },
+    {
+      "d": 4,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "ButtonControl",
+      "n": "工作區按鈕"
+    },
+    {
+      "d": 6,
+      "t": "ToolBarControl",
+      "n": "應用程式列"
+    },
+    {
+      "d": 6,
+      "t": "ToolBarControl",
+      "n": "我的最愛列"
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": "側邊窗格"
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "SliderControl",
+      "n": "側邊面板調整大小控點 (可拖曳)"
+    },
+    {
+      "d": 5,
+      "t": "TabControl",
+      "n": "索引標籤列"
+    },
+    {
+      "d": 6,
+      "t": "ButtonControl",
+      "n": "搜尋索引標籤"
+    },
+    {
+      "d": 6,
+      "t": "ButtonControl",
+      "n": "工作區按鈕"
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": "view_25"
+    },
+    {
+      "d": 6,
+      "t": "ButtonControl",
+      "n": "新索引標籤"
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TabControl",
+      "n": "索引標籤列"
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "PaneControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": "總結"
+    }
+  ]
+}

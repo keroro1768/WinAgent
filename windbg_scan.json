@@ -1,0 +1,725 @@
+{
+  "app": "WinDBG",
+  "pid": 15872,
+  "total": 139,
+  "by_type": {
+    "WindowControl": 1,
+    "TitleBarControl": 1,
+    "ImageControl": 23,
+    "HeaderControl": 1,
+    "ToolBarControl": 2,
+    "CustomControl": 7,
+    "TextControl": 35,
+    "ListControl": 10,
+    "MenuControl": 1,
+    "TabControl": 1,
+    "TabItemControl": 11,
+    "GroupControl": 5,
+    "ButtonControl": 20,
+    "SplitButtonControl": 2,
+    "StatusBarControl": 1,
+    "ProgressBarControl": 1,
+    "CheckBoxControl": 1,
+    "DataItemControl": 10,
+    "PaneControl": 2,
+    "HyperlinkControl": 2,
+    "ScrollBarControl": 2
+  },
+  "all": [
+    {
+      "d": 0,
+      "t": "WindowControl",
+      "n": "WinDbg 1.2601.12001.0"
+    },
+    {
+      "d": 1,
+      "t": "TitleBarControl",
+      "n": ""
+    },
+    {
+      "d": 1,
+      "t": "ImageControl",
+      "n": "PART_Icon"
+    },
+    {
+      "d": 1,
+      "t": "HeaderControl",
+      "n": "WinDbg 1.2601.12001.0"
+    },
+    {
+      "d": 2,
+      "t": "ToolBarControl",
+      "n": "PART_QuickAccessToolBar"
+    },
+    {
+      "d": 3,
+      "t": "CustomControl",
+      "n": "PART_MenuDownButton"
+    },
+    {
+      "d": 4,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": "WinDbg 1.2601.12001.0"
+    },
+    {
+      "d": 1,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 1,
+      "t": "CustomControl",
+      "n": "Ribbon"
+    },
+    {
+      "d": 2,
+      "t": "ToolBarControl",
+      "n": "PART_QuickAccessToolBar"
+    },
+    {
+      "d": 3,
+      "t": "CustomControl",
+      "n": "PART_MenuDownButton"
+    },
+    {
+      "d": 4,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "MenuControl",
+      "n": "FileOptions"
+    },
+    {
+      "d": 3,
+      "t": "TabControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Home"
+    },
+    {
+      "d": 3,
+      "t": "GroupControl",
+      "n": "Flow Control"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Break"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Break"
+    },
+    {
+      "d": 4,
+      "t": "SplitButtonControl",
+      "n": "Go"
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "Go"
+    },
+    {
+      "d": 6,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "TextControl",
+      "n": "Go"
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Go"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Out"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Out"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Into"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Into"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Over"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Over"
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "Flow Control"
+    },
+    {
+      "d": 3,
+      "t": "GroupControl",
+      "n": "Reverse Flow Control"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Out Back"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Out Back"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Into Back"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Into Back"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Step Over Back"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Step Over Back"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Go Back"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Go Back"
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "Reverse Flow Control"
+    },
+    {
+      "d": 3,
+      "t": "GroupControl",
+      "n": "End"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Restart"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Restart"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Stop Debugging"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Stop Debugging"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Detach"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Detach"
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "End"
+    },
+    {
+      "d": 3,
+      "t": "GroupControl",
+      "n": "Preferences"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Settings"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Settings"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Source"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Source"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Assembly"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Assembly"
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "Preferences"
+    },
+    {
+      "d": 3,
+      "t": "GroupControl",
+      "n": "Help"
+    },
+    {
+      "d": 4,
+      "t": "SplitButtonControl",
+      "n": "Local Help"
+    },
+    {
+      "d": 5,
+      "t": "ButtonControl",
+      "n": "Local Help"
+    },
+    {
+      "d": 6,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "TextControl",
+      "n": "Local Help"
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Local Help"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "Feedback"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "Feedback"
+    },
+    {
+      "d": 4,
+      "t": "TextControl",
+      "n": "Help"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "View"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Breakpoints"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Time Travel"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Model"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Scripting"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Source"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Memory"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Extensions"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Command"
+    },
+    {
+      "d": 2,
+      "t": "TabItemControl",
+      "n": "Notes"
+    },
+    {
+      "d": 2,
+      "t": "CustomControl",
+      "n": "功能区显示选项"
+    },
+    {
+      "d": 3,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 1,
+      "t": "CustomControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "StatusBarControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "CustomControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "0"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "0"
+    },
+    {
+      "d": 4,
+      "t": "ButtonControl",
+      "n": "0"
+    },
+    {
+      "d": 5,
+      "t": "ImageControl",
+      "n": ""
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": "0"
+    },
+    {
+      "d": 3,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "ProgressBarControl",
+      "n": "ActivityProgressBar"
+    },
+    {
+      "d": 3,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "CustomControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "CheckBoxControl",
+      "n": "showActionCenterCheckbox"
+    },
+    {
+      "d": 5,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 1,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "DataItemControl",
+      "n": "AutoHideChannel, Children = 3, VisibleCh"
+    },
+    {
+      "d": 3,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "DataItemControl",
+      "n": "AutoHideGroup, Children = 1, VisibleChil"
+    },
+    {
+      "d": 5,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "DataItemControl",
+      "n": "ToolWindow: DisassemblyControl"
+    },
+    {
+      "d": 4,
+      "t": "DataItemControl",
+      "n": "AutoHideGroup, Children = 1, VisibleChil"
+    },
+    {
+      "d": 5,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "DataItemControl",
+      "n": "ToolWindow: RegistersControl"
+    },
+    {
+      "d": 4,
+      "t": "DataItemControl",
+      "n": "AutoHideGroup, Children = 1, VisibleChil"
+    },
+    {
+      "d": 5,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "DataItemControl",
+      "n": "ToolWindow: HexEditorToolWindowControl"
+    },
+    {
+      "d": 2,
+      "t": "DataItemControl",
+      "n": "DockRoot, Children = 1, VisibleChildren "
+    },
+    {
+      "d": 3,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 4,
+      "t": "DataItemControl",
+      "n": "DockGroup, Children = 4, VisibleChildren"
+    },
+    {
+      "d": 5,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 6,
+      "t": "DataItemControl",
+      "n": "DockGroup, Children = 2, VisibleChildren"
+    },
+    {
+      "d": 1,
+      "t": "PaneControl",
+      "n": "ActionCenter"
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": "Clear all notifications"
+    },
+    {
+      "d": 3,
+      "t": "HyperlinkControl",
+      "n": "Clear all notifications"
+    },
+    {
+      "d": 2,
+      "t": "PaneControl",
+      "n": "itemsScrollViewer"
+    },
+    {
+      "d": 3,
+      "t": "ListControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "ScrollBarControl",
+      "n": "VerticalScrollBar"
+    },
+    {
+      "d": 3,
+      "t": "ScrollBarControl",
+      "n": "HorizontalScrollBar"
+    },
+    {
+      "d": 2,
+      "t": "ButtonControl",
+      "n": ""
+    },
+    {
+      "d": 3,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": ""
+    },
+    {
+      "d": 2,
+      "t": "TextControl",
+      "n": "More information"
+    },
+    {
+      "d": 3,
+      "t": "HyperlinkControl",
+      "n": "More information"
+    },
+    {
+      "d": 2,
+      "t": "ListControl",
+      "n": ""
+    }
+  ]
+}

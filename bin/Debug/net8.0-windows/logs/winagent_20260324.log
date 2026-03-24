@@ -1,0 +1,23 @@
+[2026-03-24 02:05:49.571] [Info] FindClaudePath: searching in 5 locations (home=C:\Users\Keror)
+[2026-03-24 02:05:49.576] [Info] Found Claude at: C:\Users\Keror\.local\bin\claude.exe
+[2026-03-24 02:05:49.579] [Info] ExecuteOneShot: path=C:\Users\Keror\.local\bin\claude.exe, prompt=Say hello in one sentence....
+[2026-03-24 02:05:49.579] [Info] ExecuteOneShot args: --print --output-format text --dangerously-skip-permissions -p "Say hello in one sentence."
+[2026-03-24 02:05:49.595] [Info] OneShot process started, PID=77068
+[2026-03-24 02:05:53.600] [Info] [OneShot stdout] Hello! How can I help you today?
+[2026-03-24 02:05:54.175] [Info] Claude one-shot completed (exit=0, output=32 chars)
+[2026-03-24 02:05:54.188] [Info] ExecuteOneShot: path=C:\Users\Keror\.local\bin\claude.exe, prompt=What is 2+2? Reply with just the number....
+[2026-03-24 02:05:54.189] [Info] ExecuteOneShot args: --print --output-format text --dangerously-skip-permissions -p "What is 2+2? Reply with just the number."
+[2026-03-24 02:05:54.203] [Info] OneShot process started, PID=27032
+[2026-03-24 02:05:57.683] [Info] [OneShot stdout] 4
+[2026-03-24 02:05:58.278] [Info] Claude one-shot completed (exit=0, output=1 chars)
+[2026-03-24 02:07:20.535] [Info] FindClaudePath: searching in 5 locations (home=C:\Users\Keror)
+[2026-03-24 02:07:20.540] [Info] Found Claude at: C:\Users\Keror\.local\bin\claude.exe
+[2026-03-24 02:07:20.542] [Info] ExecuteOneShot: path=C:\Users\Keror\.local\bin\claude.exe, prompt=Say hello in one sentence....
+[2026-03-24 02:07:20.542] [Info] ExecuteOneShot args: --print --output-format text --dangerously-skip-permissions -p "Say hello in one sentence."
+[2026-03-24 02:07:20.555] [Info] OneShot process started, PID=77260
+[2026-03-24 02:07:23.406] [Info] [OneShot stdout] Hello! How can I help you today?
+[2026-03-24 02:07:23.966] [Info] Claude one-shot completed (exit=0, output=32 chars)
+[2026-03-24 02:08:26.737] [Info] Starting ClaudeManager (interactive mode, target=1)...
+[2026-03-24 02:08:26.753] [Info] Started process claude (Instance 1, PID: 62456)
+[2026-03-24 02:08:26.754] [Info] Spawned interactive Claude instance 1 (PID: 62456)
+[2026-03-24 02:08:26.756] [Info] ClaudeManager started with 1 interactive instances

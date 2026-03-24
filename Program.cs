@@ -118,8 +118,14 @@ namespace WinAgent
         }
 
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
+            if (args.Length > 0 && args[0] == "--test")
+            {
+                TestRunner.RunTest().GetAwaiter().GetResult();
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
@@ -145,6 +151,15 @@ namespace WinAgent
             private IntPtr targetWindowHandle = IntPtr.Zero;
             private System.Windows.Forms.Timer foregroundTimer;
             private ListView listIcons;
+            
+            // Claude manager
+            private Services.ClaudeManager? claudeManager;
+
+            // Legacy countdown UI fields (kept for countdown dialog)
+            private Form? countdownForm;
+            private System.Windows.Forms.Timer? countdownTimer;
+            private int countdownSeconds = 5;
+            private Label? lblCountdown;
 
             public MainForm()
             {
@@ -190,9 +205,17 @@ namespace WinAgent
                 btnTaskbar = new Button { Text = "Scan Tray Icons", AutoSize = true, Location = new Point(270, 8) };
                 btnTaskbar.Click += (s, e) => ScanTaskbarIcons();
 
+                Button btnStartClaude = new Button { Text = "Ask Claude", AutoSize = true, Location = new Point(370, 8), BackColor = Color.LightGreen };
+                btnStartClaude.Click += (s, e) => TestClaudeOneShot();
+
+                Button btnInteractive = new Button { Text = "Interactive", AutoSize = true, Location = new Point(460, 8), BackColor = Color.LightBlue };
+                btnInteractive.Click += (s, e) => StartClaudeCountdown();
+
                 topPanel.Controls.Add(chkAlwaysOnTop);
                 topPanel.Controls.Add(btnHide);
                 topPanel.Controls.Add(btnTaskbar);
+                topPanel.Controls.Add(btnStartClaude);
+                topPanel.Controls.Add(btnInteractive);
 
                 listIcons = new ListView
                 {
@@ -675,6 +698,141 @@ namespace WinAgent
                     System.IO.File.WriteAllText(System.IO.Path.Combine(folder, "settings.txt"), $"AlwaysOnTop={chkAlwaysOnTop.Checked}");
                 }
                 catch { }
+            }
+            
+            // ============================================
+            // Approach B: One-shot test (Ask Claude button)
+            // ============================================
+
+            private async void TestClaudeOneShot()
+            {
+                lblStatus.Text = "Asking Claude (one-shot)...";
+
+                string prompt = !string.IsNullOrWhiteSpace(txtInput.Text)
+                    ? txtInput.Text
+                    : "Say hello in one sentence.";
+
+                var manager = GetOrCreateClaudeManager();
+                var result = await manager.ExecuteOneShotAsync(prompt, timeoutSeconds: 60);
+
+                if (result.Success)
+                {
+                    string preview = result.Output.Length > 200
+                        ? result.Output.Substring(0, 200) + "..."
+                        : result.Output;
+                    lblStatus.Text = $"Claude OK ({result.Output.Length} chars)";
+                    MessageBox.Show(result.Output, "Claude Response", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    lblStatus.Text = $"Claude failed: {result.Error.Substring(0, Math.Min(60, result.Error.Length))}";
+                    MessageBox.Show($"Error: {result.Error}", "Claude Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            // ============================================
+            // Approach A: Interactive mode (Interactive button)
+            // ============================================
+
+            private void StartClaudeCountdown()
+            {
+                countdownForm = new Form
+                {
+                    Text = "Starting Claude (Interactive)...",
+                    Size = new Size(400, 200),
+                    StartPosition = FormStartPosition.CenterScreen,
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
+                    TopMost = true
+                };
+
+                lblCountdown = new Label
+                {
+                    Text = "Starting interactive Claude in 5 seconds...\nPress ESC to cancel",
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.Fill,
+                    Font = new Font("Arial", 14, FontStyle.Bold)
+                };
+
+                countdownForm.Controls.Add(lblCountdown);
+                bool cancelled = false;
+                countdownForm.KeyDown += (s, e) =>
+                {
+                    if (e.KeyCode == Keys.Escape) { cancelled = true; countdownForm.Close(); lblStatus.Text = "Cancelled"; }
+                };
+
+                countdownTimer = new System.Windows.Forms.Timer { Interval = 1000 };
+                countdownSeconds = 5;
+
+                countdownTimer.Tick += (s, e) =>
+                {
+                    countdownSeconds--;
+                    if (countdownSeconds > 0)
+                    {
+                        if (lblCountdown != null)
+                            lblCountdown.Text = $"Starting in {countdownSeconds}...\nPress ESC to cancel";
+                    }
+                    else
+                    {
+                        countdownTimer!.Stop();
+                        countdownForm.Close();
+                        if (!cancelled)
+                            this.BeginInvoke(new Action(() => StartInteractiveClaude()));
+                    }
+                };
+
+                countdownForm.Shown += (s, e) => countdownTimer.Start();
+                countdownForm.ShowDialog(this);
+            }
+
+            private async void StartInteractiveClaude()
+            {
+                lblStatus.Text = "Starting interactive Claude...";
+
+                try
+                {
+                    var manager = GetOrCreateClaudeManager();
+                    await manager.StartInteractiveAsync();
+
+                    var statuses = manager.GetClaudeStatuses();
+                    int running = statuses.Count(s => s.Status == WinAgent.Models.ProcessStatus.Running);
+                    lblStatus.Text = $"Interactive Claude: {running} instance(s) running";
+
+                    // Hook up output display
+                    manager.OnClaudeOutput += (id, output) =>
+                    {
+                        try
+                        {
+                            this.BeginInvoke(new Action(() =>
+                            {
+                                lblStatus.Text = $"[Claude#{id}] {output.Substring(0, Math.Min(50, output.Length))}";
+                            }));
+                        }
+                        catch { }
+                    };
+
+                    MessageBox.Show(
+                        $"Interactive Claude started ({running} instance(s)).\n" +
+                        "Type a prompt in the input box and click Send to interact.",
+                        "Claude Interactive",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    lblStatus.Text = $"Error: {ex.Message}";
+                    MessageBox.Show($"Failed: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            private Services.ClaudeManager GetOrCreateClaudeManager()
+            {
+                if (claudeManager == null)
+                {
+                    claudeManager = new Services.ClaudeManager(
+                        workingDirectory: @"D:\Project\WinAgent"
+                    );
+                }
+                return claudeManager;
             }
         }
     }

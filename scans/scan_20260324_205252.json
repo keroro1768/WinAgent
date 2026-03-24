@@ -1,0 +1,76 @@
+{
+  "scanned_at": "2026-03-24T20:52:52.568305",
+  "total_elements": 8,
+  "tabs": {
+    "opensourcefile": {
+      "name": "Open sourcefile",
+      "x": 68,
+      "y": 240,
+      "type": "tab"
+    }
+  },
+  "buttons": {
+    "startdebugging": {
+      "name": "Start debugging",
+      "x": 68,
+      "y": 126,
+      "type": "button"
+    },
+    "saveworkspace": {
+      "name": "Save workspace",
+      "x": 68,
+      "y": 183,
+      "type": "button"
+    }
+  },
+  "all_elements": [
+    {
+      "name": "aWinDbg 1260L12001 0",
+      "x": -1,
+      "y": -3,
+      "type": "unknown"
+    },
+    {
+      "name": "Start debugging",
+      "x": 261,
+      "y": 105,
+      "type": "button"
+    },
+    {
+      "name": "Start debugging",
+      "x": 68,
+      "y": 126,
+      "type": "button"
+    },
+    {
+      "name": "Save workspace",
+      "x": 68,
+      "y": 183,
+      "type": "button"
+    },
+    {
+      "name": "You havenlt debugged anything recently. Star",
+      "x": 771,
+      "y": 189,
+      "type": "unknown"
+    },
+    {
+      "name": "Recent",
+      "x": 342,
+      "y": 211,
+      "type": "unknown"
+    },
+    {
+      "name": "left",
+      "x": 773,
+      "y": 233,
+      "type": "unknown"
+    },
+    {
+      "name": "Open sourcefile",
+      "x": 68,
+      "y": 240,
+      "type": "tab"
+    }
+  ]
+}
