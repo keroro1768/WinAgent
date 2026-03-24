@@ -1,0 +1,506 @@
+{
+  "size": 48,
+  "count": 100,
+  "icons": [
+    {
+      "name": "@u",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\u.png",
+      "placeholder": true
+    },
+    {
+      "name": "]w",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\w.png",
+      "placeholder": true
+    },
+    {
+      "name": "access",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\access.png",
+      "placeholder": true
+    },
+    {
+      "name": "administrative tools",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\administrativetools.png",
+      "placeholder": true
+    },
+    {
+      "name": "awesun",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\awesun.png",
+      "placeholder": true
+    },
+    {
+      "name": "bj{",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\bj.png",
+      "placeholder": true
+    },
+    {
+      "name": "character map",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\charactermap.png",
+      "placeholder": true
+    },
+    {
+      "name": "chrome ݮୱ",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\chromeݮୱ.png",
+      "placeholder": true
+    },
+    {
+      "name": "chrome 遠端桌面",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\chrome遠端桌面.png",
+      "placeholder": true
+    },
+    {
+      "name": "cl޲z",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\clz.png",
+      "placeholder": true
+    },
+    {
+      "name": "command prompt",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\commandprompt.png",
+      "placeholder": true
+    },
+    {
+      "name": "component services",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\componentservices.png",
+      "placeholder": true
+    },
+    {
+      "name": "computer management",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\computermanagement.png",
+      "placeholder": true
+    },
+    {
+      "name": "control panel",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\controlpanel.png",
+      "placeholder": true
+    },
+    {
+      "name": "copilot",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\copilot.png",
+      "placeholder": true
+    },
+    {
+      "name": "c鼽",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\c鼽.png",
+      "placeholder": true
+    },
+    {
+      "name": "dfrgui",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\dfrgui.png",
+      "placeholder": true
+    },
+    {
+      "name": "disk cleanup",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\diskcleanup.png",
+      "placeholder": true
+    },
+    {
+      "name": "eclipse temurin jdk with hotspot 21.0.9+10 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\eclipsetemurinjdkwithhotspot21.png",
+      "placeholder": true
+    },
+    {
+      "name": "event viewer",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\eventviewer.png",
+      "placeholder": true
+    },
+    {
+      "name": "excel",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\excel.png",
+      "placeholder": true
+    },
+    {
+      "name": "file explorer",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\fileexplorer.png",
+      "placeholder": true
+    },
+    {
+      "name": "game bar",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gamebar.png",
+      "placeholder": true
+    },
+    {
+      "name": "git",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\git.png",
+      "placeholder": true
+    },
+    {
+      "name": "git bash",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gitbash.png",
+      "placeholder": true
+    },
+    {
+      "name": "git cmd",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gitcmd.png",
+      "placeholder": true
+    },
+    {
+      "name": "git faqs (frequently asked questions)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gitfaqsfrequentlyaskedquestion.png",
+      "placeholder": true
+    },
+    {
+      "name": "git gui",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gitgui.png",
+      "placeholder": true
+    },
+    {
+      "name": "git release notes",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\gitreleasenotes.png",
+      "placeholder": true
+    },
+    {
+      "name": "github cli",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\githubcli.png",
+      "placeholder": true
+    },
+    {
+      "name": "go programming language amd64 go1.25.6",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\goprogramminglanguageamd64go12.png",
+      "placeholder": true
+    },
+    {
+      "name": "google chrome",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\googlechrome.png",
+      "placeholder": true
+    },
+    {
+      "name": "hk",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\hk.png",
+      "placeholder": true
+    },
+    {
+      "name": "idle (python 3.12 64-bit)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\idlepython31264bit.png",
+      "placeholder": true
+    },
+    {
+      "name": "idle (python 3.14 64-bit)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\idlepython31464bit.png",
+      "placeholder": true
+    },
+    {
+      "name": "install additional tools for node.js",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\installadditionaltoolsfornodej.png",
+      "placeholder": true
+    },
+    {
+      "name": "iscsi initiator",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\iscsiinitiator.png",
+      "placeholder": true
+    },
+    {
+      "name": "iscsi ұʾ",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\iscsiұʾ.png",
+      "placeholder": true
+    },
+    {
+      "name": "iscsi 啟動器",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\iscsi啟動器.png",
+      "placeholder": true
+    },
+    {
+      "name": "livecaptions",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\livecaptions.png",
+      "placeholder": true
+    },
+    {
+      "name": "magnify",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\magnify.png",
+      "placeholder": true
+    },
+    {
+      "name": "memory diagnostics tool",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\memorydiagnosticstool.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net 8.0 templates 8.0.417 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnet80templates80417x6.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net apphost pack - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetapphostpack8023x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net apphost pack - 8.0.23 (x64_arm64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetapphostpack8023x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net apphost pack - 8.0.23 (x64_x86)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetapphostpack8023x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net host - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnethost8023x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net host fx resolver - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnethostfxresolver8023.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net runtime - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetruntime8023x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net sdk 8.0.417 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdk80417x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net standard targeting pack - 2.1.0 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetstandardtargetingp.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net targeting pack - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnettargetingpack8023x.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft .net toolset 8.0.417 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnettoolset80417x64.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft 365 - zh-tw",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoft365zhtw.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft 365 copilot",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoft365copilot.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft asp.net core 8.0.23 shared framework (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftaspnetcore8023sharedf.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft asp.net core 8.0.23 targeting pack (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftaspnetcore8023targeti.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft clipchamp",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftclipchamp.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft defender",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftdefender.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft edge",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftedge.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft edge webview2 執行階段",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftedgewebview2執行階段.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft onedrive",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftonedrive.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft onenote - zh-tw",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftonenotezhtw.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft store",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftstore.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft teams",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftteams.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft teams (personal)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftteamspersonal.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft to do",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsofttodo.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft update health tools",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftupdatehealthtools.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2015-2022 redistributable (x64) - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc20152022redist.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2015-2022 redistributable (x86) - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc20152022redist.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2022 x64 additional runtime - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc2022x64additio.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2022 x64 minimum runtime - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc2022x64minimum.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2022 x86 additional runtime - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc2022x86additio.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft visual c++ 2022 x86 minimum runtime - 14.44.35211",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftvisualc2022x86minimum.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft whiteboard",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftwhiteboard.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft windows desktop runtime - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftwindowsdesktopruntime.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft windows desktop targeting pack - 8.0.23 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftwindowsdesktoptargeti.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.android.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkandroidmanifest.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.aspire.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkaspiremanifest8.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.ios.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkiosmanifest8010.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.maccatalyst.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkmaccatalystmani.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.macos.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkmacosmanifest80.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.maui.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdkmauimanifest801.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.sdk.tvos.manifest-8.0.100 (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetsdktvosmanifest801.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.emscripten.current.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloademscripten.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.emscripten.net6.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloademscripten.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.emscripten.net7.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloademscripten.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.mono.toolchain.current.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloadmonotoolch.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.mono.toolchain.net6.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloadmonotoolch.png",
+      "placeholder": true
+    },
+    {
+      "name": "microsoft.net.workload.mono.toolchain.net7.manifest (x64)",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\microsoftnetworkloadmonotoolch.png",
+      "placeholder": true
+    },
+    {
+      "name": "msys2 clang64",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\msys2clang64.png",
+      "placeholder": true
+    },
+    {
+      "name": "msys2 clangarm64",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\msys2clangarm64.png",
+      "placeholder": true
+    },
+    {
+      "name": "msys2 mingw64",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\msys2mingw64.png",
+      "placeholder": true
+    },
+    {
+      "name": "msys2 msys",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\msys2msys.png",
+      "placeholder": true
+    },
+    {
+      "name": "msys2 ucrt64",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\msys2ucrt64.png",
+      "placeholder": true
+    },
+    {
+      "name": "narrator",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\narrator.png",
+      "placeholder": true
+    },
+    {
+      "name": "ngrok",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\ngrok.png",
+      "placeholder": true
+    },
+    {
+      "name": "node.js",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\nodejs.png",
+      "placeholder": true
+    },
+    {
+      "name": "node.js command prompt",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\nodejscommandprompt.png",
+      "placeholder": true
+    },
+    {
+      "name": "node.js documentation",
+      "icon": "D:\\Project\\WinAgent\\icons_normalized\\nodejsdocumentation.png",
+      "placeholder": true
+    }
+  ]
+}
