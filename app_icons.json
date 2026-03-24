@@ -1,0 +1,252 @@
+[
+  {
+    "name": "@u",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "]w",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "access",
+    "exe_path": "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSACCESS.EXE",
+    "icon_extracted": false
+  },
+  {
+    "name": "administrative tools",
+    "exe_path": "C:\\WINDOWS\\system32\\control.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "awesun",
+    "exe_path": "C:\\Program Files\\Oray\\AweSun\\AweSun.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "bj{",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "character map",
+    "exe_path": "C:\\WINDOWS\\system32\\charmap.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "chrome ݮୱ",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "chrome 遠端桌面",
+    "exe_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "cl޲z",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "command prompt",
+    "exe_path": "C:\\WINDOWS\\system32\\cmd.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "component services",
+    "exe_path": "C:\\WINDOWS\\system32\\comexp.msc",
+    "icon_extracted": false
+  },
+  {
+    "name": "computer management",
+    "exe_path": "C:\\WINDOWS\\system32\\compmgmt.msc",
+    "icon_extracted": false
+  },
+  {
+    "name": "control panel",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "copilot",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "c鼽",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "dfrgui",
+    "exe_path": "C:\\WINDOWS\\system32\\dfrgui.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "disk cleanup",
+    "exe_path": "C:\\WINDOWS\\system32\\cleanmgr.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "eclipse temurin jdk with hotspot 21.0.9+10 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "event viewer",
+    "exe_path": "C:\\WINDOWS\\system32\\eventvwr.msc",
+    "icon_extracted": false
+  },
+  {
+    "name": "excel",
+    "exe_path": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+    "icon_extracted": false
+  },
+  {
+    "name": "file explorer",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "game bar",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "git",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "git bash",
+    "exe_path": "C:\\Program Files\\Git\\git-bash.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "git cmd",
+    "exe_path": "C:\\Program Files\\Git\\git-cmd.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "git faqs (frequently asked questions)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "git gui",
+    "exe_path": "C:\\Program Files\\Git\\cmd\\git-gui.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "git release notes",
+    "exe_path": "C:\\Program Files\\Git\\ReleaseNotes.html",
+    "icon_extracted": false
+  },
+  {
+    "name": "github cli",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "go programming language amd64 go1.25.6",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "google chrome",
+    "exe_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "hk",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "idle (python 3.12 64-bit)",
+    "exe_path": "C:\\Users\\Keror\\AppData\\Local\\Programs\\Python\\Python312\\pythonw.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "idle (python 3.14 64-bit)",
+    "exe_path": "C:\\Users\\Keror\\AppData\\Local\\Programs\\Python\\Python314\\pythonw.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "install additional tools for node.js",
+    "exe_path": "C:\\Windows\\System32\\cmd.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "iscsi initiator",
+    "exe_path": "C:\\WINDOWS\\system32\\iscsicpl.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "iscsi ұʾ",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "iscsi 啟動器",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "livecaptions",
+    "exe_path": "C:\\WINDOWS\\system32\\LiveCaptions.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "magnify",
+    "exe_path": "C:\\WINDOWS\\system32\\magnify.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "memory diagnostics tool",
+    "exe_path": "C:\\WINDOWS\\system32\\MdSched.exe",
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net 8.0 templates 8.0.417 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net apphost pack - 8.0.23 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net apphost pack - 8.0.23 (x64_arm64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net apphost pack - 8.0.23 (x64_x86)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net host - 8.0.23 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net host fx resolver - 8.0.23 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net runtime - 8.0.23 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  },
+  {
+    "name": "microsoft .net sdk 8.0.417 (x64)",
+    "exe_path": null,
+    "icon_extracted": false
+  }
+]
